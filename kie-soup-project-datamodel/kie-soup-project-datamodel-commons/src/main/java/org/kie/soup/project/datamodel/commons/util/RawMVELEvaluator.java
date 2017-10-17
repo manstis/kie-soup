@@ -17,10 +17,13 @@ package org.kie.soup.project.datamodel.commons.util;
 
 import java.util.Map;
 
+import javax.enterprise.context.ApplicationScoped;
+
 import org.mvel2.MVEL;
 import org.mvel2.compiler.CompiledExpression;
 import org.mvel2.integration.VariableResolverFactory;
 
+@ApplicationScoped
 public class RawMVELEvaluator implements MVELEvaluator {
 
     @Override
